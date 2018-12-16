@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My first app';
+  headerOption: string = "recipe";
+
+  onNavigationChanged(optionSelected: string) {
+    this.headerOption = optionSelected;
+  }
 }
