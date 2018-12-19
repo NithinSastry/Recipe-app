@@ -16,7 +16,7 @@
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu">
-        <li><a href="#">Add ingredients to shopping list</a></li>
+        <li><a (click)="moveIngredientToShoppingList(recipe.ingredients)" style="cursor:pointer;">Add ingredients to shopping list</a></li>
         <li><a href="#">Edit recipe</a></li>
         <li><a href="#">Delete recipe</a></li>
       </ul>
