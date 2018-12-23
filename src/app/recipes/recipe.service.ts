@@ -10,8 +10,11 @@ export class RecipeService {
           new Recipe("test2", "test desc", "", [new Ingredient("sauce", 1), new Ingredient("tomatoes", 20)]),
      ];
 
-     getRecipes() {
+     public getRecipes() {
           return this.recipes.slice();
      }
 
+     public getRecipe(index: number) {
+          return this.recipes[index];
+     }
 }

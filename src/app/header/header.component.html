@@ -1,21 +1,23 @@
 <nav class="navbar navbar-default">
      <div class="container-fluid">
           <div class="navbar-header">
-               <a href="#" class="navbar-brand">Receipe book</a>
+               <a 
+               [routerLink]="['/']"
+               class="navbar-brand">Receipe book</a>
           </div>
 
           <!-- <div class="collapse navbar-collapse"> -->
           <div class="navbar-default">
                <ul class="nav navbar-nav">
-                    <li><a routerLink="/recipes">Recipes</a></li>
-                    <li><a routerLink="/shopping-list">Shopping List</a></li>
+                    <li routerLinkActive="active"><a routerLink="/recipes" >Recipes</a></li>
+                    <li routerLinkActive="active"><a routerLink="/shopping-list" >Shopping List</a></li>
                </ul>
                <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown" appDropDown> 
-                         <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
+                         <a style="cursor:pointer;" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
                          <ul class="dropdown-menu"> 
-                              <li><a href="#">Save data</a></li>
-                              <li><a href="#">Fetch data</a></li>
+                              <li><a style="cursor:pointer;">Save data</a></li>
+                              <li><a style="cursor:pointer;">Fetch data</a></li>
                          </ul>
                     </li>
                </ul>
